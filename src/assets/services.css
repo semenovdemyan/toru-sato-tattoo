@@ -1,0 +1,13 @@
+* {
+  color: aliceblue;
+}
+.services-container {
+	position: relative;
+	background-color: #000;
+	z-index: 70000;
+	top: -100px;
+	padding: 100px 0 100px 0;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom: 2.5px solid #999;
+}

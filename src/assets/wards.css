@@ -1,0 +1,16 @@
+.wards {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	z-index: 195000;
+}
+
+.ward_2 {
+	color: rgb(255, 115, 0);
+}
+
+.ward,
+.path {
+	width: 38px;
+	height: 38px;
+}

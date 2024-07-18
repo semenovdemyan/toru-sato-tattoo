@@ -1,0 +1,40 @@
+/* :root{
+  --gap: 15px
+} */
+
+.dope-section {
+  padding: 75px 0 0;
+  position: relative;
+  z-index: 60000;
+  overflow: hidden;
+  top: -195px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom: 2.5px solid #999;
+}
+.dope-container {
+  display: flex;
+  flex-wrap: nowrap;
+width: 100%;
+height: 1000px;
+overflow: hidden;
+}
+
+/* .swiper-wrapper */
+.swiper-wrapper2 {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.swiper-slide {
+
+ display: flex;
+ flex-direction: column;
+}
+
+.dope-container .swiper {
+  max-width: calc(100% / 4);
+}

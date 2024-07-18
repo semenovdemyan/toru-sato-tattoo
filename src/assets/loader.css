@@ -1,0 +1,219 @@
+.loader-container {
+  z-index: 200000;
+  background: radial-gradient(circle, rgb(255, 115, 0) 0%, #000000 90%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 15.5rem / 2);
+  left: calc(50% - 15.5rem / 2);
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 15.5rem;
+  height: 15.5rem;
+  z-index: 100;
+
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1.2s spin linear infinite;
+}
+
+.loader:after {
+  color: rgb(255, 115, 0);
+  transform: rotateY(70deg);
+  animation-delay: .4s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px #FF3D00;
+  }
+
+  12% {
+    box-shadow: .2em .2em 0 0 #00ffff;
+  }
+
+  25% {
+    box-shadow: 0 .2em 0 0px #01b6fd;
+  }
+
+  37% {
+    box-shadow: -.2em .2em 0 0 #8c01fd;
+  }
+
+  50% {
+    box-shadow: -.2em 0 0 0 #4d01fd;
+  }
+
+  62% {
+    box-shadow: -.2em -.2em 0 0 #01fdb1;
+  }
+
+  75% {
+    box-shadow: 0px -.2em 0 0 #00ff37;
+  }
+
+  87% {
+    box-shadow: .2em -.2em 0 0 #fd01c6;
+  }
+}
+
+.karps {
+  width: 13.5rem;
+  height: 13.5rem;
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotation;
+  -moz-animation-duration: 5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -o-animation-name: rotation;
+  -o-animation-duration: 5s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(720deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.loader-percents {
+  position: absolute;
+  font-size: 9.5rem;
+  justify-content: center;
+  top: 60%;
+  color: #dd8130;
+
+}
+
+#percents {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+.counter {
+  max-height: 12rem;
+  overflow: hidden;
+}
+
+.loader-progress {
+  -webkit-box-shadow: 0px 5px 50px -3px #000000; 
+box-shadow: 0px 5px 50px 10px #000000;
+  border-radius: 50px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 350px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background: #000000;
+}
+
